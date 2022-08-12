@@ -1,298 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_cn">
 <head>
   <meta charset="UTF-8">
-  <title>商品上传sku</title>
+  <title>sku 商品上传</title>
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <style>
     .table td, .table th {
       vertical-align: middle;
     }
-    .title{padding: 10px;background-color: #eaeaea}
-
-    .value-content{
+    .title {
       padding: 10px;
+      background-color: #eaeaea;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .value-content {
+      padding: 10px;
+      display: flex;
+    }
+
+    .value-content .spec-value-cell{
+      margin-right: 10px;
+    }
+
+    .value-content .spec-value-cell input{
+      margin-right: 4px;
     }
   </style>
 </head>
 <body>
 
 <div class="container-fluid">
+  <div style="text-align: right;padding: 10px 0"><input type="button" value="添加规格" class="add-spec-btn"/></div>
   <div class="spec-content">
-    <div class="spec-group" spId="1" spName="机身颜色">
-      <div class="title">机身颜色</div>
-      <div class="value-content row">
-        <div class="col-md-2">
+    <div class="spec-group" specId="1" specName="机身颜色">
+      <div class="title">
+        <span>机身颜色</span><input type="button" value="添加规格值" class="add-attr-btn"/>
+      </div>
+      <div class="value-content">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="iphone X 深空灰 原封" value="101">iphone X 深空灰 原封
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="iphone X 银色 原封" value="102">iphone X 银色 原封
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="澳门版深空灰 三网通 原封" value="103">澳门版深空灰 三网通 原封
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="澳门版深银色 三网通 原封" value="104">澳门版深银色 三网通 原封
         </div>
       </div>
     </div>
-    <div class="spec-group" spId="2" spName="套餐类型">
-      <div class="title">套餐类型</div>
-      <div class="value-content row">
-        <div class="col-md-2">
+    <div class="spec-group" specId="2" specName="套餐类型">
+      <div class="title">套餐类型<input type="button" value="添加规格值" class="add-attr-btn"/></div>
+      <div class="value-content">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="官方标配" value="201">官方标配
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="套餐一" value="202">套餐一
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="套餐二" value="203">套餐二
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="套餐三" value="204">套餐三
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="套餐四" value="205">套餐四
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="套餐五" value="206">套餐五
         </div>
       </div>
     </div>
-    <div class="spec-group" spId="3" spName="存储容量">
-      <div class="title">存储容量</div>
-      <div class="value-content row">
-        <div class="col-md-2">
+    <div class="spec-group" specId="3" specName="存储容量">
+      <div class="title">存储容量<input type="button" value="添加规格值" class="add-attr-btn"/></div>
+      <div class="value-content">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="64G" value="301">64G
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="128G" value="302">128G
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="256G" value="303">256G
         </div>
       </div>
     </div>
-    <div class="spec-group" spId="4" spName="版本类型">
-      <div class="title">版本类型</div>
-      <div class="value-content row">
-        <div class="col-md-2">
+    <div class="spec-group" specId="4" specName="版本类型">
+      <div class="title">版本类型<input type="button" value="添加规格值" class="add-attr-btn"/></div>
+      <div class="value-content">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="港澳台" value="401">港澳台
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="亚太" value="402">亚太
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="中国大陆" value="403">中国大陆
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="日本" value="404">日本
         </div>
-        <div class="col-md-2">
+        <div class="spec-value-cell">
           <input type="checkbox" spValueName="欧洲" value="405">欧洲
         </div>
       </div>
     </div>
   </div>
-  <div id="createTable"></div>
+  <table class="table table-bordered" style="border-collapse: collapse;" id="mTable">
+    <thead>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
 </div>
+
 
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+
 <script>
-  $(".spec-content").on("change",function () {
-    sku.createTable();
-  });
-  var sku = {
-    createTable: function () {
-      var specArray = new Array();// 盛放每组选中的CheckBox值的对象
-      var titleArray = new Array();// 表格标题数组
-      var titleIndex = 0;//规格项目下标
-      var columnArray = new Array(); // 指定列，用来合并哪些列
-      sku.mergeTable();//合并表格
-      //遍历规格
-      $(".spec-group").each(function (i, val) {
-        columnArray.push(i);
-        //checkbox选中的个数
-        var checkedLength = $(val).find("input[type=checkbox]:checked").length;
-        if (checkedLength > 0) {
-          //获取标题
-          titleArray[titleIndex] = $(val).attr("spName");
-          //规格id
-          var spId = $(val).attr("spId");
-          //规格名称
-          var spName = $(val).attr("spName");
-          var specValueArray = new Array();//存放规格值的数组
-          //循环,判断获取每个规格中选中的值
-          $(val).find("input[type=checkbox]:checked").each(function (j, specVal) {
-            //创建规格对象
-            var specUnit = "";
-            if ($(specVal).attr("flag") == 1) {
-              specUnit = $(specVal).attr("spValueName").trim();
-            }
-            var spec = {
-              spId: spId,
-              spName: spName,
-              specValueId: $(specVal).val().trim(),
-              specValueName: $(specVal).attr("spValueName").trim(),
-              specInfo: spName + ":" + $(specVal).attr("spValueName").trim() + " ",
-              specUnit: specUnit
-            };
-            //将规格值放入数组中
-            specValueArray[j] = spec;
-          });
-          // 把每个规格的选中项放入数组specArray[arrayLen]
-          specArray[titleIndex] = specValueArray;
-          titleIndex++
+  let skuMethod = {
+    /**
+     * reduce
+     * 累加器 ｜ 当前迭代项 ｜当前索引 ｜ 源数组
+     * sum,item,index,arr
+     * [[]] sum的初始值
+     * @type {*[]}
+     */
+    descartes(metaData) {
+      return metaData.reduce((x, y) => {
+        let arr = [];
+        x.forEach(x => y.forEach(y => arr.push(x.concat([y]))))
+        return arr;
+      }, [[]])
+    },
+    generatorTable(skuData) {
+      let mergeCellColumn=[]
+      // 生成表格
+      $("thead").html("")
+      $("tbody").html("")
+
+      if (skuData[0].length==0){
+        return
+      }
+      skuData.forEach(function (item, index) {
+        // 生成表头
+        if (index == 0) {
+          let tHeader = "<tr>"
+          item.forEach(function (sub, i) {
+            mergeCellColumn.push(++i);
+            tHeader += "<th>" + sub.specName + "</th>"
+          })
+          tHeader += "<th>价格</th><th>库存</th></tr>"
+          $("thead").append(tHeader)
         }
+        // 生成表格内容
+        let tr = "<tr>"
+        let td = ""
+        item.forEach(function (sub) {
+          td += "<td>" + sub.specValueName + "</td>"
+        })
+        let tdAppend = "<td><input  type='number'  class='form-control'/></td><td><input type='number' class='form-control'/></td>"
+        td = td + tdAppend
+        tr = tr + td + "</tr>"
+        $("tbody").append(tr)
       });
-      console.log("规格数组",specArray);
-      var arr = sku.getSkuTr(specArray);
-      console.log("处理后的数组",arr);
-      //开始生成表格
-      if (typeof arr != 'undefined') {
-        $('#createTable').html('');
-        var table = $('<table class="table table-bordered" style="border-collapse: collapse;"></table>');
-        table.appendTo($('#createTable'));
-        var thead = $('<thead></thead>');
-        thead.appendTo(table);
-        var trHead = $('<tr></tr>');
-        trHead.appendTo(thead);
-
-        //创建表头
-        var str = ""
-        $.each(titleArray, function (index, item) {
-          str += '<th width="10%">' + item + '</th>';
-        });
-        str += "<th>别名</th><th>售价</th> <th>库存</th><th>规格编码</th>";
-        trHead.append(str);
-        var tbody = $('<tbody></tbody>');
-        tbody.appendTo(table);
-        //创建行
-        $.each(arr, function (index, item) {
-          var specValItem = item.specValueName.split(",");
-          var tr = $('<tr name="skuDo" sp-id=' + item.spId + ' sp-name=' + item.spName + ' sp-val-name=' + item.specValueName + ' sp-val-id="' + item.specValueId + '" value="' + item.specValueId + '"></tr>');
-          tr.appendTo(tbody);
-          var str = '';
-          $.each(specValItem, function (i, data) {
-            str += '<td>' + data + '</td>';
-          });
-          str += '<td>'+ item.specInfo + '</td>';
-          str += '<td><input type="number" class="form-control" placeholder="售价"/></td>';
-          str += '<td><input type="number" class="form-control" placeholder="库存"/></td>';
-          str += '<td><input type="number" class="form-control" placeholder="规格编码"/></td>';
-          tr.append(str);
-        });
-
-        //结束创建Table表
-        columnArray.pop(); //删除数组中最后一项
-        //合并单元格
-        $(table).mergeCell({
-          // 目前只有cols这么一个配置项, 用数组表示列的索引,从0开始
-          cols: columnArray
-        });
-      } else {
-        $('#createTable').html('');
-      }
+      return mergeCellColumn
     },
-    getSkuTr: function (arr) {
-      var a = 1;
-      for (var r = 0; r < arr.length; r++) {
-        a *= arr[r].length;
-      }
-      var newArray = arr[0]
-      for (var m = 1; m < arr.length; m++) {
-        var arr2 = arr[m];
-        newArray = sku.dosku(newArray, arr2)
-      }
-      return newArray;
-    },
-    dosku: function (arr, arr2) {
-      var a = arr.length;
-      var b = arr2.length;
-      var newArr = new Array(a * b);
-      var q = 0;
-      for (var i = 0; i < arr.length; i++) {
-        for (var j = 0; j < arr2.length; j++) {
-          var spec = {
-            spId: arr[i].spId + ',' + arr2[j].spId,
-            spName: arr[i].spName + ',' + arr2[j].spName,
-            specValueId: arr[i].specValueId + ',' + arr2[j].specValueId,
-            specValueName: arr[i].specValueName + ',' + arr2[j].specValueName,
-            specUnit: arr[i].specUnit + arr2[j].specUnit,
-            specInfo: arr[i].specInfo + arr2[j].specInfo + " "
-
-          };
-          newArr[q] = spec;
-          q++;
+    /**
+     * 合并行 指定表格列 指定列的相同文本的相邻单元格
+     * @param table_id 表格id
+     * @param columns 列数组从1开始[1,2,3]
+     */
+    mergeCell(table_id, columns) {
+      columns.forEach(function (column) {
+        let tds = $(table_id + " tr td:nth-child(" + column + ")"); // 获取当前表格第几列的所有td对象
+        let rowSpanIndex=0
+        let rowSpanNum = 1;
+        for (let i = 0; i < tds.length; i++) {
+          if (i>=tds.length-1){
+            return
+          }
+          if ($(tds[i]).text()==$(tds[i+1]).text()){
+            $(tds[i+1]).hide();
+            $(tds[rowSpanIndex]).attr("rowSpan", ++rowSpanNum);
+          }else{
+            rowSpanIndex=i+1
+            rowSpanNum=1
+          }
         }
-      }
-      return newArr;
-    },
-    mergeTable: function () {
-      $.fn.mergeCell = function (options) {
-        return this.each(function () {
-          var cols = options.cols;
-          for (var i = cols.length - 1; cols[i] != undefined; i--) {
-            mergeCell($(this), cols[i]);
-          }
-          dispose($(this));
-        })
-      };
 
-      function mergeCell($table, colIndex) {
-        $table.data('col-content', ''); // 存放单元格内容
-        $table.data('col-rowspan', 1); // 存放计算的rowspan值 默认为1
-        $table.data('col-td', $()); // 存放发现的第一个与前一行比较结果不同td(jQuery封装过的), 默认一个"空"的jquery对象
-        $table.data('trNum', $('tbody tr', $table).length); // 要处理表格的总行数, 用于最后一行做特殊处理时进行判断之用
-        // 进行"扫面"处理 关键是定位col-td, 和其对应的rowspan
-        $('tbody tr', $table).each(function (index) {
-          // td:eq中的colIndex即列索引
-          var $td = $('td:eq(' + colIndex + ')', this);
-          // 获取单元格的当前内容
-          var currentContent = $td.html();
-          // 第一次时走次分支
-          if ($table.data('col-content') == '') {
-            $table.data('col-content', currentContent);
-            $table.data('col-td', $td);
-          } else {
-            // 上一行与当前行内容相同
-            if ($table.data('col-content') == currentContent) {
-              // 上一行与当前行内容相同则col-rowspan累加, 保存新值
-              var rowspan = $table.data('col-rowspan') + 1;
-              $table.data('col-rowspan', rowspan);
-              // 值得注意的是 如果用了$td.remove()就会对其他列的处理造成影响
-              $td.hide();
-              // 最后一行的情况比较特殊一点
-              // 比如最后2行 td中的内容是一样的, 那么到最后一行就应该把此时的col-td里保存的td设置rowspan
-              // 最后一行不会向下判断是否有不同的内容
-              if (++index == $table.data('trNum'))
-                $table.data('col-td').attr('rowspan', $table.data('col-rowspan'));
-            }
-            // 上一行与当前行内容不同
-            else {
-              // col-rowspan默认为1, 如果统计出的col-rowspan没有变化, 不处理
-              if ($table.data('col-rowspan') != 1) {
-                $table.data('col-td').attr('rowspan', $table.data('col-rowspan'));
-              }
-              // 保存第一次出现不同内容的td, 和其内容, 重置col-rowspan
-              $table.data('col-td', $td);
-              $table.data('col-content', $td.html());
-              $table.data('col-rowspan', 1);
-            }
-          }
-        })
-      }
-
-      // 同样是个private函数 清理内存之用
-      function dispose($table) {
-        $table.removeData();
-      }
+      })
     }
-  };
+
+  }
+</script>
+<script>
+
+  $(".spec-content").on("change", function () {
+    let specArray = [];// 盛放每组选中的CheckBox值的对象
+    let titleArray = [];// 表格标题数组
+    let titleIndex = 0;//规格项目下标
+    //遍历规格
+    $(".spec-group").each(function (i, val) {
+      //checkbox选中的个数
+      var checkedLength = $(val).find("input[type=checkbox]:checked").length;
+      if (checkedLength > 0) {
+        //获取标题
+        titleArray[titleIndex] = $(val).attr("specName");
+        //规格id
+        var specId = $(val).attr("specId");
+        //规格名称
+        var specName = $(val).attr("specName");
+        var specValueArray =[];//存放规格值的数组
+        //循环,判断获取每个规格中选中的值
+        $(val).find("input[type=checkbox]:checked").each(function (j, specVal) {
+          //创建规格对象
+          var spec = {
+            specId: specId,
+            specName: specName,
+            specValueId: $(specVal).val().trim(),
+            specValueName: $(specVal).attr("spValueName").trim(),
+          };
+          //将规格值放入数组中
+          specValueArray[j] = spec;
+        });
+        // 把每个规格的选中项放入数组specArray[arrayLen]
+        specArray[titleIndex] = specValueArray;
+        titleIndex++
+      }
+    });
+    console.log("源数据",specArray)
+    let skuList = skuMethod.descartes(specArray)
+    console.log("sku",skuList)
+    let mergeCellColumn = skuMethod.generatorTable(skuList)
+    skuMethod.mergeCell("#mTable", mergeCellColumn);
+  });
+
+
+  // 添加规格
+  $(".add-spec-btn").click(function () {
+    var name = prompt("添加规格：");
+    if (name){
+      let specGroup = "<div class='spec-group' specId='1' specName='"+name+"'>" +
+              "<div class='title'>"+name+" <input type='button' value='添加规格值' class='add-attr-btn'/></div>" +
+              "<div class='value-content'></div>" +
+              "</div>"
+      $(".spec-content").append(specGroup)
+    }
+  })
+
+
+  // 添加规格值 动态添加dom使用 $(document).on()方式 不然点击失效
+  $(document).on("click",".add-attr-btn",function(){
+    var name = prompt("添加规格值：");
+    if (name){
+      let valueContent = "<div class='spec-value-cell'> <input type='checkbox' spValueName='"+name+"' value='201'/>"+name+"</div>"
+      $(this).parent().parent().find(".value-content").append(valueContent)
+    }
+  })
 </script>
 </body>
 </html>
