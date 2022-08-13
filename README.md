@@ -113,4 +113,4 @@ mergeCell(table_id, columns) {
 ````
 
 到这里一个电商sku生成就完成了。
-[GirHub源码地址](https://github.com/TobiZh/skuUpload)
+[源码地址](https://github.com/TobiZh/skuUpload)
