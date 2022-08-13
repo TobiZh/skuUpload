@@ -1,4 +1,4 @@
-![5df5ecbfe15a43849be9fcd8545ca51a.png](//img01.aizuda.com/v1/image/preview?id=1557953936739012608)
+![效果图](https://upload-images.jianshu.io/upload_images/2646856-e2d4d7570092c08a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 spu sku如果不懂的话可以百度，这篇只教你如何实现，整体分为4个步骤，你可以根据自己的业务，灵活使用。
 
